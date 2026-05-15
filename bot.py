@@ -3,7 +3,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, CommandHandler, filters, ContextTypes
 
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
-OWNER_ID = 123456789  # ← bu yerga O'Z Telegram ID ingizni yozing
+OWNER_ID = int(os.environ.get("OWNER_ID"))  # ← bu yerga O'Z Telegram ID ingizni yozing
 
 AUTO_REPLY_TEXT = (
     "Salom! 👋\n\n"
