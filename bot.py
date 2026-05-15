@@ -2,7 +2,8 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTypes
 
 # O'z tokeningizni shu yerga yozing
-BOT_TOKEN = "BU_YERGA_TOKENINGIZNI_YOZING"
+import os
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 
 # Avtomatik javon matni
 AUTO_REPLY_TEXT = (
